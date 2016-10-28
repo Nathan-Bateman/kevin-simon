@@ -46,6 +46,7 @@ of those sections to manage the look and feel of the site. */
 .small-menu {
    min-width: 263px;
    margin-top: 28px; 
+   display: block;
 }
 .hide {
     display: none;
@@ -131,7 +132,8 @@ of those sections to manage the look and feel of the site. */
 }
 .logo {
     min-height: 425px;
-    background-image: url(/Users/nathantoddbatemanjr/Documents/Kadosh/kadosh_clients/kevin-simon/css/images/kevin_simon_kc_logo2.png);
+    /*background-image: url(css/img/kevin_simon_kc_logo2.png);*/
+    background-color: rgba(174,210,240,.3);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -187,7 +189,7 @@ of those sections to manage the look and feel of the site. */
     /*height: 100%;*/
     padding-top: 150px;
     text-align: center;
-    background: #aed2f0;
+    background-color: rgba(174,210,240,.3);
     padding-bottom: 150px;
 }
 .services-section h1 {
@@ -215,7 +217,7 @@ of those sections to manage the look and feel of the site. */
     /*height: 100%;*/
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: #fff;
     padding-bottom: 150px;
 }
 .quote-wrap {
@@ -269,6 +271,9 @@ of those sections to manage the look and feel of the site. */
    }
    .mobile-logo {
     display: block;
+   }
+   .small-menu {
+    display: none !important;
    }
    .kevin-pic {
     margin-bottom: 50px;
