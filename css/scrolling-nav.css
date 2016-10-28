@@ -31,30 +31,235 @@ html {
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
 
+.logo-wrapper {
+    margin-left: 15px;
+    margin-top: -41px;
+}
+
+.navbar-header, .page-scroll > .logo-wrapper > img {
+    max-width: 103px;
+    margin-bottom: -13px;
+}
+.navbar-header, .page-scroll > .logo-wrapper > a {
+    padding: 0;
+    font-size: medium;
+    margin-left: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle {
+    background-color: transparent !important;
+    border:none;
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: rgba(10, 81, 142, .15) !important;
+}
+.navbar-collapse.in {
+    width: calc(100% + 2000px);
+}
+.navbar-collapse, .collapsing > ul {
+    /*margin:0;*/
+ /*   overflow-y: auto;*/
+  width: calc(100% + 2000px);
+}
 .intro-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 150px;
     text-align: center;
     background: #fff;
+    padding-bottom:150px;
 }
+.navbar {
+    background-color: #187DD4;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-brand:hover {
+    color:rgba(255,255,255,.5);
+}
+.navbar-default .navbar-brand:focus {
+    color: #fff;
+}
+.nav, .navbar-nav > li > a {
+    color:#fff !important;
+}
+.page-scroll,a:hover {
+    color:rgba(255,255,255,.5);
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+    background-color: rgba(255,255,255,0) !important;
+}
+/*.navbar-default .navbar-nav>.active, .navbar-default .navbar-nav>.active>a:focus {
+    border-bottom: #fff solid 2px;
+}*/
 
 .about-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
-}
-
-.services-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 150px;
     text-align: center;
     background: #fff;
+    padding-bottom: 150px;
+}
+.about-section p {
+    max-width: 50%;
+    font-style: italic;
+    font-size: 18px;
+    margin:0 auto;
+    line-height: 1.8;
+}
+.logo {
+    min-height: 425px;
+    background-image: url(/Users/nathantoddbatemanjr/Documents/Kadosh/kadosh_clients/kevin-simon/css/images/kevin_simon_kc_logo2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.CAT {
+    background-color: rgba(105,105,105,0.2);
+    padding: 50px;
+    max-width: 340px;
+}
+.form-group > input {
+    margin-bottom: 20px;
+    min-height: 45px;
+}
+.form-group > textarea {
+    margin-bottom: 20px;
+    min-height: 90px;
+}
+.submit {
+    width: 100%;
+    background-color: #ec610d;
+    border: none;
+    padding: 15px 0px;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.kevin-pic h2 {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    color: #333;
+}
+.kevin-pic p {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    color: #187DD4;
+}
+.kevin-pic a {
+    text-decoration: none;
+}
+.services-section {
+    /*height: 100%;*/
+    padding-top: 150px;
+    text-align: center;
+    background: #aed2f0;
+    padding-bottom: 150px;
+}
+.services-section h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.service-image-section {
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.service-image {
+    border: 5px solid #fff;
+    border-radius: 100%;
+    max-width: 220px;
+    margin-bottom: 20px;
 }
 
 .contact-section {
-    height: 100%;
+    /*height: 100%;*/
     padding-top: 150px;
     text-align: center;
     background: #eee;
+    padding-bottom: 150px;
+}
+.quote-wrap {
+    margin: 50px 0;
+    text-align: center;
+}
+.quote-wrap > h1 {
+    margin-bottom: 20px;
+}
+.quote-wrap > a {
+    text-decoration: none;
+    
+}
+.quote-wrap > p {
+    margin:0 auto;
+    margin-bottom: 20px;
+    max-width: 315px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.quote-wrap > a > button {
+    text-decoration: none;
+    text-align: center;
+    background-color: #DC7E0F;
+    color: #FFF;
+    font-weight: 700;
+
+    width: 20%;
+    min-width: 100px;
+    max-width: 300px;
+    border-radius: 5px;
+    font-size: 20px;
+
+    border: none;
+    padding: 15px 0px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+   .navbar-toggle {
+    position: absolute;
+    right: 0%;
+   }
+   .navbar-header, .page-scroll {
+    display: block;
+   }
+} 
+@media only screen and (min-width: 768px) {
+    .navbar-collapse > ul {
+    margin-top: 21px;
+    float: right;
+    }
+    .navbar-header, .page-scroll {
+        display: flex;
+        flex-direction: column;
+    }
+    .collapse, .navbar-collapse, .navbar-ex1-collapse {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+.navbar-fixed-top > .container {
+    width: 970px;
+}
+@media (min-width: 1200px) {
+    .navbar-fixed-top > .container {
+        width: 1170px;
+    }
 }
