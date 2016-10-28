@@ -33,9 +33,26 @@ of those sections to manage the look and feel of the site. */
 
 .logo-wrapper {
     margin-left: 15px;
-    margin-top: -41px;
+    margin-bottom: -41px;
 }
-
+.logo-img {
+    margin-top: -18px;
+}
+.mobile-logo {
+    min-width: 263px;
+    margin-top: 15px;
+    display: none;
+}
+.small-menu {
+   min-width: 263px;
+   margin-top: 28px; 
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
 .navbar-header, .page-scroll > .logo-wrapper > img {
     max-width: 103px;
     margin-bottom: -13px;
@@ -123,6 +140,7 @@ of those sections to manage the look and feel of the site. */
     background-color: rgba(105,105,105,0.2);
     padding: 50px;
     max-width: 340px;
+    margin: 0 auto;
 }
 .form-group > input {
     margin-bottom: 20px;
@@ -160,6 +178,7 @@ of those sections to manage the look and feel of the site. */
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     color: #187DD4;
+    font-size: 24px;
 }
 .kevin-pic a {
     text-decoration: none;
@@ -173,6 +192,11 @@ of those sections to manage the look and feel of the site. */
 }
 .services-section h1 {
     color: #333;
+    margin-bottom: 20px;
+}
+.services-section p {
+    max-width: 277px;
+    margin:0 auto;
     margin-bottom: 20px;
 }
 .service-image-section {
@@ -217,7 +241,7 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background-color: #DC7E0F;
     color: #FFF;
-    font-weight: 700;
+    font-weight: 400;
 
     width: 20%;
     min-width: 100px;
@@ -239,6 +263,15 @@ of those sections to manage the look and feel of the site. */
    }
    .navbar-header, .page-scroll {
     display: block;
+   }
+   .logo-img {
+    display: none !important;
+   }
+   .mobile-logo {
+    display: block;
+   }
+   .kevin-pic {
+    margin-bottom: 50px;
    }
 } 
 @media only screen and (min-width: 768px) {

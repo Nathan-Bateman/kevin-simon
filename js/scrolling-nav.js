@@ -2,8 +2,14 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $('.logo-img').addClass('hide');
+        $('.small-menu').removeClass('hide');
+        $('.small-menu').addClass('show');
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $('.logo-img').removeClass('hide');
+        $('.small-menu').removeClass('show');
+        $('.small-menu').addClass('hide');
     }
 });
 
