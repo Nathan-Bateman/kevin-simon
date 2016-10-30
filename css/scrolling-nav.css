@@ -93,6 +93,7 @@ of those sections to manage the look and feel of the site. */
 }
 .navbar {
     background-color: #187DD4;
+    font-size: 16px;
 }
 .navbar-default .navbar-brand {
     color: #fff;
@@ -138,6 +139,21 @@ of those sections to manage the look and feel of the site. */
     background-position: center;
     background-repeat: no-repeat;
 }
+#social-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding:0;
+}
+#social-icons > li:first-child {
+    margin-right: 20px;
+}
+#social-icons > li:last-child {
+    margin-left: 20px;
+}
+#social-icons > li > a:hover {
+    opacity: .5;
+}
 .CAT {
     background-color: rgba(105,105,105,0.2);
     padding: 50px;
@@ -182,9 +198,18 @@ of those sections to manage the look and feel of the site. */
     color: #187DD4;
     font-size: 24px;
 }
+.kevin-pic > img {
+    box-shadow: -9px 7px 39px rgb(51, 51, 51);
+
+}
 .kevin-pic a {
     text-decoration: none;
 }
+.kevin-pic > a > p {
+    letter-spacing: 3px;
+
+}
+
 .services-section {
     /*height: 100%;*/
     padding-top: 150px;
