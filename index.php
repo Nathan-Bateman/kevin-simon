@@ -2,7 +2,7 @@
 session_start();
     $data = array();
     $errors = array(); 
-    //echo '<link rel="stylesheet" type="text/css" href="css/bootstrap.min.form.css"></head>';
+    echo '<link rel="stylesheet" type="text/css" href="css/bootstrap.min.form.css"></head>';
     function generateFormToken($form) {
     
         // generate a token from an unique value, took from microtime, you can also use salt-values, other crypting methods...
@@ -44,11 +44,11 @@ session_start();
       $name = check_input($_POST["name"]);
         $email = check_input($_POST["emailaddress"]);
         $message = check_input($_POST["message"]);
-        $ForwardTo = 'nathan.bateman.jr@gmail.com';
+        $ForwardTo = 'kevinsimon282@gmail.com';
         $details='Name: '.$name."\n".'Email: '.$email."\n".'Message: '.$message."\n";
         $data['success'] = true;
         $data['message'] = 'Success!';
-        mail($ForwardTo,"Kivin Simon Insurance Contact",$details,"From:$email");
+        mail($ForwardTo,"Kevin Simon Insurance Contact",$details,"From:$email");
         
     } else {
     
@@ -61,16 +61,16 @@ session_start();
     <div class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content" style="top:4em">
-      <div class="modal-header">
-        <h4 class="modal-title" style="border-top:none; border-bottom:none; Color:#003D7A">Thanks for writing in!</h4>
+      <div class="modal-header" style="background-color: #187DD4;">
+        <h3 class="modal-title" style="border-top:none; border-bottom:none; Color:#fff">Great to hear from you!</h3>
       </div>
       <div class="modal-body">
-        <p>Thanks for writing in! I will get back to you withing 1-2 business days.<br><br>Thanks!<br><br>Kevin Simon </p>
+        <p style="font-size:16px;">I will get back to you within 1-2 business days.<br><br>Thanks!<br><br>Kevin Simon </p>
       </div>
       <div class="modal-footer">
-<form action="index.php" style="text-align:left">
-    <button type="button" class="btn btn-primary">Back to site</button>
-</form>
+<a href="index.php" style="float:left">
+    <button type="button" class="btn btn-primary" style="background-color: #ec610d; border-color:#ec610d;">Back to site</button>
+</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -89,11 +89,11 @@ session_start();
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Get in touch with Kevin Simon - Insurance agent in Kansas City">
+    <meta name="author" content="Kevin Simon">
 
     <title>Kevin Simon Insurance Agent - Kansas City</title>
-
+    <link rel="shortcut icon" href="images/favicon.png">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
@@ -118,7 +118,6 @@ session_start();
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<?php echo "string"; ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -130,10 +129,7 @@ session_start();
                     <span class="icon-bar"></span>
                 </button>
                 <div class='logo-wrapper'>
-                    <a class="navbar-brand page-scroll" href="#page-top"><img src="images/kevin_simon_logo.svg" alt="Kevin Simon Logo" class='logo-img' style="
-                        width: 265px;
-                        padding-top: 5px;
-                        margin-top:-28px;">
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="images/kevin_simon_logo.svg" alt="Kevin Simon Logo" class='logo-img' style="">
                         <h3 class='mobile-logo'>HOMETOWN INSURANCE LLC</h3>
                         <h3 class='hide small-menu'>HOMETOWN INSURANCE LLC</h3>
                     </a>
@@ -202,7 +198,7 @@ session_start();
             <div class="row">
                 <div class="col-md-12">
                     <h1>Note from Kevin</h1>
-                    <p>On Sept 14th my contract with American Family Insurance was terminated abruptly and without warning.  Fortunately, I have found a new home with an "independent" insurance agency and now have 10 companies to represent, rather than just one.  I have a one-year non-compete with American Family and cannot solicit my prior customers, but if they request a comparison for their insurance, I can gladly provide that.  In September 2017 I will actively solicit them.</p>
+                    <p>On Sept 14th my contract with American Family Insurance was terminated abruptly and without warning.  Fortunately, I have found a new home with an "independent" insurance agency and now have 10 companies to represent, rather than just one.  I have a one-year non-compete with American Family and cannot solicit my prior customers, but if they request a comparison for their insurance, I can gladly provide that.  In September 2017 I will actively solicit my former American Family customers.</p>
                 </div>
             </div>
         </div>
@@ -220,12 +216,12 @@ session_start();
                 <div class="col-md-4">
                     <img class='service-image' src="images/kevin_simon_kansas_city_home_owners_insurance.jpeg" alt="kevin_simon_kansas_city_home_owners_insurance">
                     <h3>Home Owners</h3>
-                    <p>Protect your equity with our many flexible home owners plans.</p>
+                    <p>Protect your equity with our many flexible Kansas City home owners plans.</p>
                 </div>
                 <div class="col-md-4">
                     <img class='service-image' src="images/kevin_simon_kansas_city_auto_insurance.jpg" alt="kevin_simon_kansas_city_auto_insurance">
                     <h3>Auto</h3>
-                    <p>We have a range of plans to keep you protected.</p>
+                    <p>We have a range of plans to keep you protected on the roads of Kansas City and beyond.</p>
                 </div>
                 <div class="col-md-4">
                     <img class='service-image' src="images/kevin_simon_kansas_city_life_insurance.jpeg" alt="kevin_simon_kansas_city_life_insurance">
@@ -260,6 +256,14 @@ session_start();
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-87130016-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 </body>
 

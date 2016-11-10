@@ -32,11 +32,17 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .logo-wrapper {
+    /*margin-left: 15px;
+    margin-bottom: -41px;*/
+    position: relative;
+    transform: translateY(-50%);
     margin-left: 15px;
-    margin-bottom: -41px;
 }
 .logo-img {
-    margin-top: -18px;
+    /*margin-top: -18px;*/
+    width: 265px;
+    /*padding-top: 5px;
+    margin-top:-28px;*/
 }
 .mobile-logo {
     min-width: 263px;
@@ -45,7 +51,7 @@ of those sections to manage the look and feel of the site. */
 }
 .small-menu {
    min-width: 263px;
-   margin-top: 28px; 
+   margin-top: 55px; 
    display: block;
 }
 .hide {
